@@ -12,19 +12,21 @@ import { createClient } from '@nexrender/api';
 
 class Nxrender implements INodeType {
   description: INodeTypeDescription = {
-    displayName: 'NXRender',
+    displayName: 'NxRender',
     name: 'Nxrender',
     group: ['transform'],
+    icon: 'file:Nxrender.svg', // Specify your icon file here
     version: 1,
-    description: 'Programmatic Nexrender n8n Node',
+    subtitle: 'Programmatic n8n Node for Nexrender',
+    description: 'Automate After Effects Production',
     defaults: {
-      name: 'NXRender',
+      name: 'NxRender',
     },
     inputs: ['main'],
     outputs: ['main'],
     properties: [
       {
-        displayName: 'API Endpoint',
+        displayName: 'API Request',
         name: 'apiEndpoint',
         type: 'options',
         options: [

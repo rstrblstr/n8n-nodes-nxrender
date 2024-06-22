@@ -8,23 +8,22 @@
     "n8n-plugin"
   ],
   "license": "MIT",
-  "homepage": "ccroww.com",
+  "homepage": "https://ccroww.com",
   "author": {
     "name": "ccroww",
-    "email": ""
+    "email": "your-email@example.com"
   },
-  {
-   "name": "@rstrblstr/n8n-nodes-nxrender",
-   "repository": {
-     "type": "git",
-     "url": "https://github.com/rstrblstr/n8n-nodes-nxrender"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rstrblstr/n8n-nodes-nxrender.git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
   "main": "index.js",
   "scripts": {
-    "lint": "eslint . --ext .ts --fix"
+    "lint": "eslint . --ext .ts --fix",
+    "prepare": "npm run build"
   },
   "files": [
     "dist"
@@ -36,7 +35,7 @@
       "dist/credentials/HttpBinApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/Nxrender/Nxrender.node.js",
+      "dist/nodes/Nxrender/Nxrender.node.js"
     ]
   },
   "devDependencies": {
